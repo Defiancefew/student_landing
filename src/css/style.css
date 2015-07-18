@@ -1,3 +1,73 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* SASS variables are information about icon's compiled state, stored under its original file name
+ *
+ * .icon-home
+ *   width: $icon-home-width
+ *
+ * The large array-like variables contain all information about a single icon
+ * $icon-home: x y offset_x offset_y width height total_width total_height image_path
+ *
+ * At the bottom of this section, we provide information about the spritesheet itself
+ * $spritesheet: width height image $spritesheet-sprites
+ */
+/* The provided mixins are intended to be used with the array-like variables
+ *
+ * .icon-home
+ *   @include sprite-width($icon-home)
+ *
+ * .icon-email
+ *   @include sprite($icon-email)
+ */
+/* The `sprites` mixin generates identical output to the CSS template
+ *   but can be overridden inside of SASS
+ *
+ * @include sprites($spritesheet-sprites)
+ */
 html {
   box-sizing: border-box; }
 
@@ -5,37 +75,28 @@ html {
   box-sizing: inherit; }
 
 html.js .loader {
-  background: none repeat scroll 0 0 #ffffff;
-  bottom: 0;
-  height: 100%;
-  left: 0;
   position: fixed;
-  right: 0;
+  z-index: 9999;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  z-index: 9999; }
+  height: 100%;
+  background: none repeat scroll 0 0 #ffffff; }
   html.js .loader .loader_inner {
-    background-image: url("../img/preloader.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #fff;
-    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 60px;
+    height: 60px;
     margin-top: -30px;
     margin-left: -30px;
-    left: 50%;
-    top: 50%;
-    position: absolute; }
-
-body {
-  font-weight: normal;
-  font-size: 14px;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialised;
-  overflow-x: hidden; }
+    background-color: #fff;
+    background-image: url("../img/preloader.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -69,28 +130,337 @@ label {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none; }
+  user-select: none;
+  -o-user-select: none; }
 
 img {
-  height: auto;
+  width: auto\9;
   max-width: 100%;
-  width: auto\9; }
+  height: auto; }
 
 ul {
-  list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 .cf {
   *zoom: 1; }
   .cf:before, .cf:after {
-    content: " ";
-    display: table; }
+    display: table;
+    content: " "; }
   .cf:after {
     clear: both; }
 
 .hidden {
   display: none; }
+
+body {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  -webkit-font-smoothing: antialised; }
+
+header {
+  min-height: 640px;
+  padding-top: 32px;
+  color: #FFF;
+  background-image: url("../img/header_bg.jpg");
+  background-position: top center;
+  background-size: cover; }
+
+.logo {
+  font-family: "RobotoBold", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px; }
+
+.top_phone {
+  text-align: right; }
+
+.top_phone .wrapper .tab {
+  font-family: "RobotoRegular";
+  font-size: 16px; }
+
+.top_phone .wrapper .active {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: underline; }
+
+.top_phone .tab_item {
+  font-family: "RobotoBold";
+  font-size: 35px;
+  display: none; }
+
+.top_phone .tab_item:first-child {
+  display: block; }
+
+.top_header {
+  margin-top: 70px; }
+  .top_header h1 {
+    font-family: "CleanvertisingLight";
+    font-size: 61px;
+    font-weight: 300;
+    line-height: 61px; }
+  .top_header p {
+    font-family: "CleanvertisingLight";
+    font-size: 37px;
+    font-weight: 300;
+    line-height: 50px; }
+
+.tabs_header {
+  margin-top: 35px; }
+  .tabs_header .tabs span {
+    display: inline-block;
+    float: left;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.25);
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+    .tabs_header .tabs span.active {
+      background-color: rgba(255, 255, 255, 0.6); }
+
+.tabs_header .wrapper .tab {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "RobotoBold";
+  font-size: 16px; }
+
+.tabs_header .wrapper .active {
+  color: black; }
+
+.tabs_header .tab_item {
+  font-family: "RobotoBold";
+  display: none;
+  font-size: 16px; }
+
+.tabs_header .tab_item:first-child {
+  display: block;
+  color: black; }
+
+.tabs_header .tab_content {
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.tabs_header .tab_item {
+  font-family: "RobotoBold";
+  font-size: 16px;
+  position: relative;
+  padding: 30px;
+  text-transform: uppercase; }
+  .tabs_header .tab_item li {
+    padding-bottom: 10px;
+    padding-left: 20px; }
+
+i.discounts-icon1, i.discounts-icon2, i.discounts-icon3 {
+  position: absolute;
+  display: inline-block;
+  margin-right: 12px; }
+
+i.discounts-icon1 {
+  top: 33px;
+  left: 10px;
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -18px;
+  width: 32px;
+  height: 20px; }
+
+i.discounts-icon2 {
+  top: 95px;
+  left: 13px;
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 18px; }
+
+i.discounts-icon3 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -38px;
+  width: 26px;
+  height: 26px;
+  left: 12px;
+  top: 127px; }
+
+.button {
+  font-family: "RobotoBold";
+  font-size: 16px;
+  line-height: 46px;
+  display: inline-block;
+  height: 46px;
+  padding: 0 32px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: #9b1818; }
+  .button.btn_green {
+    background-color: green; }
+  .button.btn_white {
+    background-color: white;
+    color: black; }
+
+.button_wrap {
+  background-color: white;
+  float: right; }
+
+.s_teasers {
+  background-color: #003469;
+  background-image: linear-gradient(to top, #E8EFF7 0%, #C6D8EE 100%);
+  min-height: 147px;
+  color: #003469;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "CleanvertisingLight";
+  padding-top: 35px; }
+
+.warranty-icon1 {
+  font-family: "RobotoRegular";
+  font-size: 75px;
+  letter-spacing: -10px;
+  line-height: 50px;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+  top: 10px; }
+
+.warranty-icon2 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -124px;
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+  top: 10px; }
+
+.warranty-icon3 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -186px;
+  width: 51px;
+  height: 65px;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+  top: 10px; }
+
+.warranty-icon4 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -64px;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+  top: 10px; }
+
+.teaser_text1 {
+  font-size: 19px; }
+
+.teaser_text2 {
+  font-size: 14px; }
+
+.teaser_text4 {
+  font-size: 13px; }
+
+footer {
+  text-align: center; }
+
+.questions {
+  font-family: "CleanvertisingLight";
+  font-size: 50px;
+  color: #000;
+  line-height: 50px;
+  margin-top: 100px; }
+
+.specialist {
+  font-family: "CleanvertisingLight";
+  font-size: 18px;
+  color: #000;
+  line-height: 18px;
+  margin-top: 50px; }
+
+.bottom_phone .wrapper {
+  text-transform: uppercase;
+  color: #9b1818;
+  font-family: "RobotoRegular";
+  margin-top: 70px; }
+
+.bottom_phone .tabs .active {
+  text-decoration: underline; }
+
+.bottom_phone .tabs {
+  font-size: 16px; }
+
+.bottom_phone .tab_item {
+  font-size: 35px;
+  font-family: "RobotoBold"; }
+
+.button_wrapper_bottom {
+  margin-top: 40px;
+  margin-bottom: 190px; }
+
+.short_teaser {
+  background-image: url("../img/short_teaser_bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  min-height: 245px;
+  color: white;
+  font-family: "RobotoRegular";
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center; }
+  .short_teaser .short_teaser_text {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1); }
+
+.review {
+  min-height: 641px;
+  background-image: url("../img/reviews_bg.jpg");
+  background-attachment: fixed; }
+
+.review_text {
+  color: white;
+  font-family: "CleanvertisingLight";
+  font-size: 50px;
+  text-align: center;
+  margin-top: 80px;
+  line-height: 50px; }
+
+img.student_pic {
+  margin: 30px auto;
+  display: block;
+  border-radius: 50%;
+  max-width: 165px;
+  border: 4px solid grey; }
+
+.small_line {
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #cea380;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.student_text {
+  margin: 0 auto;
+  font-size: 15px;
+  font-family: "RobotoRegular";
+  color: white;
+  text-align: center;
+  max-width: 700px; }
+
+.contacts_top {
+  font-size: 50px;
+  font-family: "CleanvertisingLight";
+  color: black;
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */

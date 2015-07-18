@@ -1,7 +1,24 @@
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .top_phone, .logo {
+    text-align: center; }
+
+  .top_header {
+    text-align: center; }
+    .top_header h1 {
+      font-size: 50px; }
+    .top_header p {
+      font-size: 30px; } }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .button_wrap {
+    float: none;
+    margin: 0 auto; } }
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .top_phone .tab_item {
+    font-size: 30px; } }
 
 /*# sourceMappingURL=media.css.map */
