@@ -28,8 +28,11 @@ $(".s_contacts  .tab").click(function() {
 $('.review').stellar();
 
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({items:1,dots:true});
+  $(".owl-carousel").owlCarousel({
+  	items:1,
+  	dots:true});
 });
+
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
@@ -73,5 +76,14 @@ $(document).ready(function(){
 	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+
+});
+
+$(window).load(function() {
+$(".top_header h1").animated("fadeInDown", "fadeInUp")
+$(".top_header p").animated("fadeInDown", "fadeInUp")
+$(".profi_item").animated("zoomInRight", "fadeInOut")
+$(".s_profi form").animated("lightspeedin", "fadeInRight")
+$(".tabs_header .wrapper").animated("flipInY", "flipInY")
 
 });

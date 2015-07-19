@@ -12,6 +12,7 @@ html(lang="en")
 		link(rel="stylesheet" href="css/fonts.css")
 		link(rel="stylesheet" href="css/media.css")
 		link(rel="stylesheet" href="lib/owl/assets/owl.carousel.css")
+		link(rel="stylesheet" href="lib/animate/animate.css")
 		title Landing page
 	body
 		<!--[if lt IE 9]>
@@ -79,20 +80,64 @@ html(lang="en")
 				.row
 					.col-md-3
 						span.warranty-icon1 10
-						span.teaser_text1 БОЛЕЕ 10 ЛЕТ br/
+						span.teaser_text1 БОЛЕЕ 10 ЛЕТ <br/>
 						| НА РЫНКЕ
 					.col-md-3
 						span.warranty-icon2
-						span.teaser_text2 САМЫЕ СОВРЕМЕННЫЕ br/
+						span.teaser_text2 САМЫЕ СОВРЕМЕННЫЕ<br/>
 						| МЕТОДИКИ						
 					.col-md-3
 						span.warranty-icon3
-						span.teaser_text2 КВАЛИФИЦИРОВАННЫЕ br/
+						span.teaser_text2 КВАЛИФИЦИРОВАННЫЕ<br/>
 						| ПРЕПОДАВАТЕЛИ	
 					.col-md-3
 						span.warranty-icon4
-						span.teaser_text4 ГАРАНТИРОВАННОЕ ПОЛУЧЕНИЕ br/
-						| ВЫСОКИХ БАЛЛОВ	
+						span.teaser_text4 ГАРАНТИРОВАННОЕ ПОЛУЧЕНИЕ<br/>
+						| ВЫСОКИХ БАЛЛОВ
+		section.s_profi
+			.container
+				.row
+					.col-md-12
+						h2 Доверьте обучение профессионалам
+				.row
+					.col-md-8
+						.profi_item
+							.profi_left.icon1
+							.profi_right
+								h3 Опыт
+								p Мы успешно работаем на рынке образовательных услуг уже <strong>более  10 лет</strong>, что подтверждается благодарными отзывами наших многочисленных клиентов.
+						.profi_item
+							.profi_left.icon2
+							.profi_right
+								h3 Методика
+								p Обучение квалификациям проводится по самым современным аутентичным учебникам. У нас работают только опытные и квалифицированные преподаватели и профессионалы, имеющие сертификаты.	
+						.profi_item
+							.profi_left.icon3
+							.profi_right
+								h3 Расположение
+								p Наши учебные аудитории удобно расположены в центре Москвы и Караганды рядом со станциями метро. 							
+						.profi_item
+							.profi_left.icon4
+							.profi_right
+								h3 Индивидуальность
+								p Мы делаем акцент на индивидуальном подходе к каждому ученику и четкой организации учебного процесса. Занятия также могут проводиться на дому или в офисах клиентов.																																	
+					.col-md-4
+						form
+							h2.form Связаться с нами
+							label
+								span Ваше имя
+								input(type="text" name="name" required)
+							label
+								span Ваш телефон
+								input(type="text" name="phone" required)
+							label
+								span Ваш город
+								select#(name="city")
+									option Москва											
+									option Караганда
+							.button_wrapper
+								.button.btn_green Отправить заявку									
+
 		section.review.data-stellar-ratio='2'
 			.container
 				.row
@@ -117,12 +162,18 @@ html(lang="en")
 			.contacts_top
 				h2 Как нас найти:
 			.tabs
-				span.tab.btn_red В Москве
-				span.tab.btn_red В Караганде
+				span.tab.button В Москве
+				span.tab.button В Караганде
 			.wrapper
 				.tab_content
-					.tab_item Центральная ул., дом 22, корпус 2
-					.tab_item Нагатинская ул., дом 323, корпус 4
+					.tab_item 
+						|Центральная ул., дом 22, корпус 2
+						.map
+							<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=tbXJvnk1ROE4s91ggl2euT8JrZrh6rSw&amp;height=480"></script>
+					.tab_item 
+						|Нагатинская ул., дом 323, корпус 4
+						.map
+							<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=jCKjaIWU_hajSMcNQkczZqReorzmZ2sb&amp;height=480"></script>
 		footer
 			.container
 				.row
@@ -146,6 +197,8 @@ html(lang="en")
 		script(src="lib/stellar/jquery.stellar.min.js")
 		script(src="lib/owl/owl.carousel.min.js")
 		script(src="lib/modernizr/modernizr.js")
+		script(src="lib/waypoints/waypoints.min.js")
+		script(src="lib/animate/animate-css.js")
 		script(src="js/common.js")
  
 

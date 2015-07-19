@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="lib/owl/assets/owl.carousel.css">
+    <link rel="stylesheet" href="lib/animate/animate.css">
     <title>Landing page</title>
   </head>
   <body><!--[if lt IE 9]>
@@ -81,10 +82,71 @@
     <section class="s_teasers">
       <div class="container">
         <div class="row">
-          <div class="col-md-3"><span class="warranty-icon1">10</span><span class="teaser_text1">БОЛЕЕ 10 ЛЕТ br/</span>НА РЫНКЕ</div>
-          <div class="col-md-3"><span class="warranty-icon2"></span><span class="teaser_text2">САМЫЕ СОВРЕМЕННЫЕ br/</span>МЕТОДИКИ						</div>
-          <div class="col-md-3"><span class="warranty-icon3"></span><span class="teaser_text2">КВАЛИФИЦИРОВАННЫЕ br/</span>ПРЕПОДАВАТЕЛИ	</div>
-          <div class="col-md-3"><span class="warranty-icon4"></span><span class="teaser_text4">ГАРАНТИРОВАННОЕ ПОЛУЧЕНИЕ br/</span>ВЫСОКИХ БАЛЛОВ	</div>
+          <div class="col-md-3"><span class="warranty-icon1">10</span><span class="teaser_text1">БОЛЕЕ 10 ЛЕТ <br/></span>НА РЫНКЕ</div>
+          <div class="col-md-3"><span class="warranty-icon2"></span><span class="teaser_text2">САМЫЕ СОВРЕМЕННЫЕ<br/></span>МЕТОДИКИ						</div>
+          <div class="col-md-3"><span class="warranty-icon3"></span><span class="teaser_text2">КВАЛИФИЦИРОВАННЫЕ<br/></span>ПРЕПОДАВАТЕЛИ	</div>
+          <div class="col-md-3"><span class="warranty-icon4"></span><span class="teaser_text4">ГАРАНТИРОВАННОЕ ПОЛУЧЕНИЕ<br/></span>ВЫСОКИХ БАЛЛОВ</div>
+        </div>
+      </div>
+    </section>
+    <section class="s_profi">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Доверьте обучение профессионалам</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="profi_item">
+              <div class="profi_left icon1"></div>
+              <div class="profi_right">
+                <h3>Опыт</h3>
+                <p>Мы успешно работаем на рынке образовательных услуг уже <strong>более  10 лет</strong>, что подтверждается благодарными отзывами наших многочисленных клиентов.</p>
+              </div>
+            </div>
+            <div class="profi_item">
+              <div class="profi_left icon2"></div>
+              <div class="profi_right">
+                <h3>Методика</h3>
+                <p>Обучение квалификациям проводится по самым современным аутентичным учебникам. У нас работают только опытные и квалифицированные преподаватели и профессионалы, имеющие сертификаты.	</p>
+              </div>
+            </div>
+            <div class="profi_item">
+              <div class="profi_left icon3"></div>
+              <div class="profi_right">
+                <h3>Расположение</h3>
+                <p>Наши учебные аудитории удобно расположены в центре Москвы и Караганды рядом со станциями метро. 							</p>
+              </div>
+            </div>
+            <div class="profi_item">
+              <div class="profi_left icon4"></div>
+              <div class="profi_right">
+                <h3>Индивидуальность</h3>
+                <p>Мы делаем акцент на индивидуальном подходе к каждому ученику и четкой организации учебного процесса. Занятия также могут проводиться на дому или в офисах клиентов.																																	</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <form>
+              <h2 class="form">Связаться с нами</h2>
+              <label><span>Ваше имя</span>
+                <input type="text" name="name" required>
+              </label>
+              <label><span>Ваш телефон</span>
+                <input type="text" name="phone" required>
+              </label>
+              <label><span>Ваш город</span>
+                <select>#(name="city")
+                  <option>Москва											</option>
+                  <option>Караганда</option>
+                </select>
+              </label>
+              <div class="button_wrapper">
+                <div class="button btn_green">Отправить заявку									</div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -120,11 +182,19 @@
       <div class="contacts_top">
         <h2>Как нас найти:</h2>
       </div>
-      <div class="tabs"><span class="tab btn_red">В Москве</span><span class="tab btn_red">В Караганде</span></div>
+      <div class="tabs"><span class="tab button">В Москве</span><span class="tab button">В Караганде</span></div>
       <div class="wrapper">
         <div class="tab_content">
-          <div class="tab_item">Центральная ул., дом 22, корпус 2</div>
-          <div class="tab_item">Нагатинская ул., дом 323, корпус 4</div>
+          <div class="tab_item">
+             
+            Центральная ул., дом 22, корпус 2
+            <div class="map"><script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=tbXJvnk1ROE4s91ggl2euT8JrZrh6rSw&amp;height=480"></script></div>
+          </div>
+          <div class="tab_item">
+             
+            Нагатинская ул., дом 323, корпус 4
+            <div class="map"><script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=jCKjaIWU_hajSMcNQkczZqReorzmZ2sb&amp;height=480"></script></div>
+          </div>
         </div>
       </div>
     </section>
@@ -156,6 +226,8 @@
     <script src="lib/stellar/jquery.stellar.min.js"></script>
     <script src="lib/owl/owl.carousel.min.js"></script>
     <script src="lib/modernizr/modernizr.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/animate/animate-css.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>
