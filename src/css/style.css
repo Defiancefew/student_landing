@@ -234,11 +234,9 @@ header {
 
 .tabs_header .tab_item {
   font-family: "RobotoBold";
-  display: none;
   font-size: 16px; }
 
-.tabs_header .tab_item:first-child {
-  display: block;
+.tabs_header .tab_item {
   color: black; }
 
 .tabs_header .tab_content {
@@ -304,7 +302,8 @@ i.discounts-icon3 {
 
 .button_wrap {
   background-color: white;
-  float: right; }
+  float: right;
+  margin-bottom: 20px; }
 
 .s_teasers {
   background-color: #003469;
@@ -423,7 +422,10 @@ footer {
 .review {
   min-height: 641px;
   background-image: url("../img/reviews_bg.jpg");
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: top center; }
 
 .review_text {
   color: white;
@@ -459,8 +461,37 @@ img.student_pic {
 
 .contacts_top {
   font-size: 50px;
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
   font-family: "CleanvertisingLight";
-  color: black;
-  float: right; }
+  color: black; }
+
+.s_contacts {
+  text-align: center;
+  padding-top: 50px; }
+
+.s_contacts .tabs {
+  background-color: #9B1818;
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 20px; }
+
+.s_contacts .tab {
+  text-transform: uppercase;
+  font-family: "RobotoBold";
+  font-size: 16px;
+  color: white;
+  height: 45px;
+  line-height: 45px; }
+
+.s_contacts .tab.active {
+  background-color: white;
+  color: #9B1818; }
+
+.s_contacts .tab_item {
+  font-family: "RobotoRegular";
+  font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */

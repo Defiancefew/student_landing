@@ -19,6 +19,12 @@ $(".bottom_phone .wrapper .tab").click(function() {
 	$(".bottom_phone .tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
 
+$(".s_contacts .tab_item").not(":first").hide();
+$(".s_contacts  .tab").click(function() {
+	$(".s_contacts .tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".s_contacts .tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+
 $('.review').stellar();
 
 $(document).ready(function(){

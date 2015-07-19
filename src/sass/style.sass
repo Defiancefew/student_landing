@@ -5,274 +5,303 @@
 @import "default"
 
 header
- min-height: 640px
- padding-top: 32px
- color: #FFF
- background-image: url("../img/header_bg.jpg")
- background-position: top center
- background-size: cover
+	min-height: 640px
+	padding-top: 32px
+	color: #FFF
+	background-image: url("../img/header_bg.jpg")
+	background-position: top center
+	background-size: cover
 
 .logo
- font-family: "RobotoBold", sans-serif
- font-size: 40px
- font-weight: bold
- line-height: 40px
+	font-family: "RobotoBold", sans-serif
+	font-size: 40px
+	font-weight: bold
+	line-height: 40px
 
 .top_phone
- text-align: right
+	text-align: right
 
 .top_phone .wrapper .tab
- font-family: "RobotoRegular"
- font-size: 16px
+	font-family: "RobotoRegular"
+	font-size: 16px
 .top_phone .wrapper .active
- cursor: pointer
- text-transform: uppercase
- text-decoration: underline
+	cursor: pointer
+	text-transform: uppercase
+	text-decoration: underline
 .top_phone .tab_item
- font-family: "RobotoBold"
- font-size: 35px
- display: none
+	font-family: "RobotoBold"
+	font-size: 35px
+	display: none
 .top_phone .tab_item:first-child
- display: block
+	display: block
 
 .top_header
- margin-top: 70px
- h1
-  font-family: "CleanvertisingLight"
-  font-size: 61px
-  font-weight: 300
-  line-height: 61px
- p
-  font-family: "CleanvertisingLight"
-  font-size: 37px
-  font-weight: 300
-  line-height: 50px
+	margin-top: 70px
+	h1
+		font-family: "CleanvertisingLight"
+		font-size: 61px
+		font-weight: 300
+		line-height: 61px
+	p
+		font-family: "CleanvertisingLight"
+		font-size: 37px
+		font-weight: 300
+		line-height: 50px
 
 .tabs_header
- margin-top: 35px
- .tabs
-  span
-   display: inline-block
-   float: left
-   padding: 12px 15px
-   background-color: rgba(255,255,255,.25)
-   +transition(all .25s ease-in-out)
-   &.active
-    background-color: rgba(255,255,255,.60)
+	margin-top: 35px
+	.tabs
+		span
+			display: inline-block
+			float: left
+			padding: 12px 15px
+			background-color: rgba(255,255,255,.25)
+			+transition(all .25s ease-in-out)
+			&.active
+				background-color: rgba(255,255,255,.60)
 .tabs_header .wrapper .tab
- text-transform: uppercase
- cursor: pointer
- font-family: "RobotoBold"
- font-size: 16px
+	text-transform: uppercase
+	cursor: pointer
+	font-family: "RobotoBold"
+	font-size: 16px
 .tabs_header .wrapper .active
- color: black
+	color: black
 .tabs_header .tab_item
- font-family: "RobotoBold"
- display: none
- font-size: 16px
+	font-family: "RobotoBold"
+	font-size: 16px
 
-.tabs_header .tab_item:first-child
- display: block
- color: black
+.tabs_header .tab_item	
+	color: black
 
 .tabs_header .tab_content
- background-color: rgba(255,255,255,.60)
+	background-color: rgba(255,255,255,.60)
 
 .tabs_header .tab_item
- font-family: "RobotoBold"
- font-size: 16px
- position: relative
- padding: 30px
- text-transform: uppercase
- li
-  padding-bottom: 10px
-  padding-left: 20px
+	font-family: "RobotoBold"
+	font-size: 16px
+	position: relative
+	padding: 30px
+	text-transform: uppercase
+	li
+		padding-bottom: 10px
+		padding-left: 20px
 
 %discounts
- position: absolute
- display: inline-block
- margin-right: 12px
+	position: absolute
+	display: inline-block
+	margin-right: 12px
 
 i.discounts-icon1
- top: 33px
- left: 10px
- @extend %discounts
- @include sprite($discounts-icon1)
+	top: 33px
+	left: 10px
+	@extend %discounts
+	@include sprite($discounts-icon1)
 
 i.discounts-icon2
- top: 95px
- left: 13px
- @extend %discounts
- @include sprite($discounts-icon2)
+	top: 95px
+	left: 13px
+	@extend %discounts
+	@include sprite($discounts-icon2)
 i.discounts-icon3
- @extend %discounts
- @include sprite($discounts-icon3)
- left: 12px
- top: 127px
+	@extend %discounts
+	@include sprite($discounts-icon3)
+	left: 12px
+	top: 127px
 
 .button
- font-family: "RobotoBold"
- font-size: 16px
- line-height: 46px
- display: inline-block
- height: 46px
- padding: 0 32px
- cursor: pointer
- text-transform: uppercase
- color: white
- border: none
- border-radius: 4px
- background-color: #9b1818
- &.btn_green
-  background-color: green
- &.btn_white
-  background-color: white
-  color: black
+	font-family: "RobotoBold"
+	font-size: 16px
+	line-height: 46px
+	display: inline-block
+	height: 46px
+	padding: 0 32px
+	cursor: pointer
+	text-transform: uppercase
+	color: white
+	border: none
+	border-radius: 4px
+	background-color: #9b1818
+	&.btn_green
+		background-color: green
+	&.btn_white
+		background-color: white
+		color: black
 
 .button_wrap
- background-color: white
- float: right
+	background-color: white
+	float: right
+	margin-bottom: 20px
 
 .s_teasers
- background-color: #003469
- background-image: linear-gradient(to top, #E8EFF7 0%, #C6D8EE 100%)
- min-height: 147px
- color: #003469
- text-transform: uppercase
- font-size: 24px
- font-family: "CleanvertisingLight"
- padding-top: 35px
+	background-color: #003469
+	background-image: linear-gradient(to top, #E8EFF7 0%, #C6D8EE 100%)
+	min-height: 147px
+	color: #003469
+	text-transform: uppercase
+	font-size: 24px
+	font-family: "CleanvertisingLight"
+	padding-top: 35px
 
 .warranty-icon1
- font-family: "RobotoRegular"
- font-size: 75px
- letter-spacing: -10px
- line-height: 50px
- float: left
- margin-right: 15px
- position: relative
- top: 10px
+	font-family: "RobotoRegular"
+	font-size: 75px
+	letter-spacing: -10px
+	line-height: 50px
+	float: left
+	margin-right: 15px
+	position: relative
+	top: 10px
 .warranty-icon2
- @include sprite($warranty-icon2)
- display: inline-block
- float: left
- margin-right: 15px
- position: relative
- top: 10px
+	@include sprite($warranty-icon2)
+	display: inline-block
+	float: left
+	margin-right: 15px
+	position: relative
+	top: 10px
 .warranty-icon3
- @include sprite($warranty-icon3)
- display: inline-block
- float: left
- margin-right: 15px
- position: relative
- top: 10px
+	@include sprite($warranty-icon3)
+	display: inline-block
+	float: left
+	margin-right: 15px
+	position: relative
+	top: 10px
 .warranty-icon4
- @include sprite($warranty-icon4)
- display: inline-block
- float: left
- margin-right: 15px
- position: relative
- top: 10px
+	@include sprite($warranty-icon4)
+	display: inline-block
+	float: left
+	margin-right: 15px
+	position: relative
+	top: 10px
 
 .teaser_text1
- font-size: 19px
+	font-size: 19px
 .teaser_text2
- font-size: 14px
+	font-size: 14px
 .teaser_text4
- font-size: 13px
+	font-size: 13px
 
 footer
- text-align: center
+	text-align: center
 
 .questions
- font-family: "CleanvertisingLight"
- font-size: 50px
- color: #000
- line-height: 50px
- margin-top: 100px
+	font-family: "CleanvertisingLight"
+	font-size: 50px
+	color: #000
+	line-height: 50px
+	margin-top: 100px
 
 .specialist
- font-family: "CleanvertisingLight"
- font-size: 18px
- color: #000
- line-height: 18px
- margin-top: 50px
-
+	font-family: "CleanvertisingLight"
+	font-size: 18px
+	color: #000
+	line-height: 18px
+	margin-top: 50px
 
 .bottom_phone .wrapper
- text-transform: uppercase
- color: #9b1818
- font-family: "RobotoRegular"
- margin-top: 70px
+	text-transform: uppercase
+	color: #9b1818
+	font-family: "RobotoRegular"
+	margin-top: 70px
 
 .bottom_phone .tabs .active
- text-decoration: underline
+	text-decoration: underline
 
 .bottom_phone .tabs
- font-size: 16px
+	font-size: 16px
 .bottom_phone .tab_item
- font-size: 35px
- font-family: "RobotoBold"
+	font-size: 35px
+	font-family: "RobotoBold"
 
 .button_wrapper_bottom
- margin-top: 40px
- margin-bottom: 190px
+	margin-top: 40px
+	margin-bottom: 190px
 
 .short_teaser
- background-image: url("../img/short_teaser_bg.jpg")
- background-position: top center
- background-size: cover
- min-height: 245px
- color: white
- font-family: "RobotoRegular"
- font-size: 26px
- text-transform: uppercase
- text-align: center
- .short_teaser_text
-  margin-top: 40px
-  margin-bottom: 30px
-  background-color: rgba(255,255,255,0.1)
+	background-image: url("../img/short_teaser_bg.jpg")
+	background-position: top center
+	background-size: cover
+	min-height: 245px
+	color: white
+	font-family: "RobotoRegular"
+	font-size: 26px
+	text-transform: uppercase
+	text-align: center
+	.short_teaser_text
+		margin-top: 40px
+		margin-bottom: 30px
+		background-color: rgba(255,255,255,0.1)
 
 .review
- min-height: 641px
- background-image: url("../img/reviews_bg.jpg")
- background-attachment: fixed
+	min-height: 641px
+	background-image: url("../img/reviews_bg.jpg")
+	background-attachment: fixed
+	background-repeat: repeat-x
+	background-size: cover
+	background-position: top center
 
 .review_text
- color: white
- font-family: "CleanvertisingLight"
- font-size: 50px
- text-align: center
- margin-top: 80px
- line-height: 50px
+	color: white
+	font-family: "CleanvertisingLight"
+	font-size: 50px
+	text-align: center
+	margin-top: 80px
+	line-height: 50px
 
 img.student_pic
- margin: 30px auto
- display: block
- border-radius: 50%
- max-width: 165px
- border: 4px solid grey
-.student_name
+	margin: 30px auto
+	display: block
+	border-radius: 50%
+	max-width: 165px
+	border: 4px solid grey
 
 .small_line
- display: block
- width: 80px
- height: 2px
- margin: 0 auto
- background-color: #cea380
- margin-top: 30px
- margin-bottom: 30px
+	display: block
+	width: 80px
+	height: 2px
+	margin: 0 auto
+	background-color: #cea380
+	margin-top: 30px
+	margin-bottom: 30px
 
 .student_text
- margin: 0 auto
- font-size: 15px
- font-family: "RobotoRegular"
- color: white
- text-align: center
- max-width: 700px
+	margin: 0 auto
+	font-size: 15px
+	font-family: "RobotoRegular"
+	color: white
+	text-align: center
+	max-width: 700px
 
 .contacts_top
- font-size: 50px
- font-family: "CleanvertisingLight"
- color: black
- float: right
+	font-size: 50px
+	line-height:  50px
+	display: inline-block
+	vertical-align: middle
+	font-family: "CleanvertisingLight"
+	color: black
+
+.s_contacts
+	text-align: center
+	padding-top: 50px
+
+.s_contacts .tabs
+	background-color: #9B1818
+	display: inline-block
+	height: 45px
+	line-height: 45px
+	margin-left: 20px
+
+.s_contacts .tab
+	text-transform: uppercase
+	font-family: "RobotoBold"
+	font-size: 16px
+	color: white
+	height: 45px
+	line-height: 45px
+
+.s_contacts .tab.active
+	background-color: white
+	color: #9B1818
+
+.s_contacts .tab_item
+	font-family: "RobotoRegular"
+	font-size: 18px
